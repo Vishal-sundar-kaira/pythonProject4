@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+:root{
+    --main-bg-color:#2874f0;   /*this is used to set globally color related to each other changes in one will make changes in every black color var so it is good for theme change etc.*/
+    --color-grey:rgba(0,0,0,.1)
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 50px;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif, cursive;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+nav ul{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    
+
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0px 23px;
+   
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: black;
+    font-weight: bold;
+}
+.search input{
+    width: 430px;
+    height: 27px;
+    /* border-radius: 5px; */
+    margin: 12px;
+}
+.search button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.search button:hover{
+    font-weight: bold;
+    color: black;
+}
+
+.container{
+    width: 100vw;
+}
+.slider{
+    width: 1000px;
+    margin: 6px auto;
+}
+.head{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-color:var(--color-grey);
+    border-width: 2px;
+    border-style: solid;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: var(--color-grey) 1px solid ;
+    overflow: scroll;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 25px;
+}
+
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif, cursive;
+}
+

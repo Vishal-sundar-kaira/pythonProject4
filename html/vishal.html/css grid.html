@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Grid</title>
+    <style>
+        .container{
+            background-color: red;
+            display: grid;
+           
+            grid-row-gap:18px ;/*if columns is given we can decide gap between them with row gap*/
+            grid-template-columns: auto auto auto auto;/* this is used to bring columns in one row the number of auto will decide how many column will be in one row*/
+            grid-column-gap: 21px;
+            /* grid-gap: 40px 30px; in this we can directly put row and column gap simultaneously (row,column) */
+            grid-template-rows: auto; /*increase length in downward , template means they are used to decide size of grid.*/
+        }
+        .box1{
+            background-color:white;
+            border: 10px green solid;
+            height: 15vw;
+            grid-column: 1 / 3;  /*this is used to give columns span .it will join that much column.*/
+            /* smame way you can use grid-row for row span. this is an item */
+        }
+        /* media queries is used to make changes after given limit of size of screen.to make responsive. */
+        @media screen and (max-width:800px) {
+            .box1{
+                background-color: yellow;
+            }
+        }
+
+/* Till this part was more important */
+
+
+        .nav{
+            display:inline-block;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            color: white;
+            width: 100vw;
+            height: 50px;
+            padding: 30px 0px 0px 0px;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+           display: inline-block; 
+            list-style-type: none;
+            padding: 0px 0.5vw;
+            font-size: 22px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>about</li>
+                <li>contanct</li>
+                <li>solution</li>
+                <li>question</li>
+                <li>help</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="box1">1
+        </div>
+        <div class="box1">2</div>
+        <div class="box1">3</div>
+        <div class="box1">4</div>
+        <div class="box1">5</div>
+        <div class="box1">6</div>
+    </div>
+</body>
+</html>

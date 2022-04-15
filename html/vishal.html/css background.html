@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            width: 1663px;
+            height: 1662px;
+            background-color: white;
+            color: white;
+            
+            background-image: url('../img/uzumaki.jpg');
+                background-repeat: no-repeat;  /* here we can decide we have to repeat image or not in x and y direction*/
+               background-size: 1663px 1662px;
+                background-size: contain;/*here i can use any cover(it will cover whole container) or contain(it will cover only of image size.) by using this in body you can do it for whole screen .*/
+                background-position: top left;/* this is used to give position to an image*/
+                background-attachment:fixed; /*this is used to fixed the image and content will only scroll and if you want both of them to scroll then used scroll*/
+                background: red url(../img/meluha.jpg) no-repeat fixed right top;/*this can be used to put everything in one place but it should be in order of color image repeat attachment position.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id accusamus at quod dolor aut officia est quasi ullam cumque molestiae assumenda neque, officiis eos laborum alias, atque aliquam ad nisi, quis eligendi dolores deleniti.
+    </div>
+    
+</body>
+</html>

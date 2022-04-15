@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size</title>
+    <style>
+        /* we got the use of units other than px because it does not work on other device like 23px for laptop is very big for mobile so we use other units which make size as per reference. */
+        .container{
+            background-color: aqua;
+            font-size: 34px;
+            size: 100vw;
+            
+        }
+        .box1{
+            background-color: red;
+            font-size:1em;  /*font size em means it will take that multiply by size of container in which it is*/
+            height: 50vh;
+        }
+        .box2{
+            background-color: blue;
+            font-size: 3rem;/*font size rem means it will take that multipy by size of html whole cotainer*/
+            width: 48vw;
+            height:50vh;
+            /* or you can also use percentage% */
+        }
+        /* {you can also use property min height and max height or width it will give its max or min limit if you try to aplly smaller or bigger value than that height or width it will not apply.
+          } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>hey there i am using css </p>
+        <div class="box1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id veniam dignissimos quos.
+        </div><div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit magnam necessitatibus porro! Necessitatibus expedita cum a nemo?
+        </div>
+    </div>
+</body>
+</html>

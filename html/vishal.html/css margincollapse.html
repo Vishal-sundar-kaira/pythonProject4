@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margincollapse</title>
+    <style>
+        .box1{
+            background-color:green;
+            margin: 30px;
+        }
+        .box2{                         /*here if in margin you gave same 30 30 margin then they both will share it and there difference will not be 60 it will be 30 only. and if one is 30 and another is 20 then system will automatically take higher number here it will take 30 margin difference in which 30 will be of first one and 2nd one will have 20 margin in that 30 only.*/
+            background-color: blue;
+            margin: 20px;
+        }
+        /*If you want to add one one in other box then if you need other box width and height same you cant say just width =100 % it will not include padding and border so the box will go out of line so for that you have to use box sizing=borderbox*/
+        .box4{
+            width: 500px;;
+            padding: 10px;
+            border: 10px solid blue;
+            
+        }
+        .box3{
+            width: 100%;
+            padding: 10px;
+            border: 10px solid green;
+            box-sizing: border-box;       /*now it will take box4 content size with border and padding*/
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos autem natus, ducimus quidem quibusdam!
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quos dignissimos doloremque, eveniet ipsa esse!
+    </div>
+    <div class="box4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quo. Eveniet eligendi sunt numquam quo voluptas ratione iure aliquid et similique sit!
+        <div class="box3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, ut.
+        </div>
+    </div>
+</body>
+</html>

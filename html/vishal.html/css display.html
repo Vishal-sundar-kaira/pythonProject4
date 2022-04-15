@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        .box1{
+            width: 131px;
+            height: 200px;
+            background-color: red;
+            display: inline-block;
+            background-image: url(../img/meluha.jpg);
+            margin: 30px;
+            background-size:cover;
+            background-repeat: no-repeat;
+            border: 10px solid brown;
+  /* Here display has most imp property of inline in which the element will take only require space we can add another element in its side by side and it does not allow to give width or height in top and down you can give it in left and right, but in block element we cant take another element in its side it will take whole row or that width  and lastly we use inline-block element in which it perform same as inline element but in this we can also make changes in height and width and margin and border or padding as per our choice. */
+        }
+        .box2{
+            width: 128px;
+            height: 200px;
+            background-image: url(../img/freedom\ of\ known.jpg);
+            background-color: blue;
+            display: inline-block;
+            margin: 30px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border: 10px solid brown;
+
+
+        }
+        .box3{
+            width:200px;
+            height: 200px;
+            margin: 30px;
+            background-image: url(../img/subtle\ art.jpg);
+            background-color: green;
+            display: inline-block;
+            background-size:contain;
+            background-repeat: no-repeat;
+            border: 10px solid brown;
+
+        }
+         /* In display:none that element is removed from the document flow and its space is not block so other element can take that place and In visibility:hidden that element is removed but its space is blocked so no other element can take that place */
+         </style>
+     
+</head>
+<body>
+    <div class="box1">
+    </div>
+    <div class="box2">
+    </div>
+    <div class="box3">
+    </div>
+</body>
+</html>

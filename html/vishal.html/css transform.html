@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform and transition</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            height: 30vh;
+        }
+        .box1{
+            /* Transform. */
+            background-color: aliceblue;
+            color: black;
+            /* transform: translate(10px,20px);  use to move container or image in x,y plane */
+            /* transform:skew(10deg,0deg) in this first 10deg is use to slant the font or image by that degeree and second 0 deg is use to slant whole container by that degree */
+            /* transform:scale(1,1) scale is use to stretch container or images in x and y direction */
+            /* transform:rotate(0.25) it is use to rotate container or image */
+            /* transform: matrix(1,2,3,4,5,6); thisis scale x ,scale y,skew x ,skew y,translatex,translaatey. */
+            /* transform: rotateX(30deg);you can also give rotate y and z */
+
+        }
+
+        /* Transition. */
+        /* img:hover{ it will decrease the size from 100 to 56 when you hover your arrow there */
+             /* width: 146px;  */
+         /* }  */
+        /* img{ */
+            /* transition-property:width ;  whose value you like to change width or all */
+            /* transition-duration: 3s;duration require to perform */
+            /* transition-timing-function: ease-in;different way to perform transition */
+            /* transition-delay: 2s; */
+            /* you can directly write all in one */
+            /* transition: width 3s ease-in 2s;   property,duration,timing function,delay.
+        } */
+        </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ea assumenda voluptates pariatur nemo? Dolor nihil ad explicabo vel culpa?
+        </div>
+        <div class="box2">
+
+            <img id="img" src="/img/library.jpg" width="100px"  alt="img">
+            <!-- <button id="btn">Toggle</button> -->
+        </div>
+    </div>
+</body>
+
+</html>

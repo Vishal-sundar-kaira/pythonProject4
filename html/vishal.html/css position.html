@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+        nav{
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            color:white;
+        }
+        li{
+            /* display: inline-block; */
+            margin: 1px 100px 1px 1px;
+            list-style: square inside;
+        }
+        /* you can use directly list style tag to give sqare or circle or any box with list item which we can also give in html */
+        .box1{
+            background-color: aqua;
+            width: 20vw;
+            height: 50vh;
+            display: inline-block;
+            position: relative;
+            /* There are many types of position by default its always in "STATIC POSITION"and then if you want to move it top bottom left or right use "POSITION RELATIVE" and in this the given element will be there but others will not see it in format so they will come in that place but that element to whom absolute is given is also there they will overlap. */
+            top: 6px;
+            left: 307px;
+        }
+
+        .box2{
+            background-color: rgb(86, 177, 59);
+            width: 20vw;
+            height: 50vh;
+            display: inline-block;
+            position: relative;
+            /* position: absolute; */
+            /* position: fixed;  This help to fix that container so that it will be there only even if you scroll down */
+            /* position: sticky;  THis work same as fixed but justt its reference is different. */
+/* In this position relative will move as per container in which it is and position absolute will move as per whole page html */
+            top: 11px;
+            right: 274px;
+        }
+        .box3{ background-color: rgb(5, 19, 1);
+            width: 20vw;
+            height: 50vh;
+            
+        }
+        /* Remember:if your two containers are overlapping so whose you want to see in front you need to increase its z-index  */
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> home </li>
+            <li>about</li>
+            <li>login</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium ex rem ratione deserunt doloribus odio incidunt possimus soluta at, similique debitis iure in quidem quaerat, ad voluptas labore nam! Est!
+
+        </div>
+        <div class="box2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquid quaerat, animi beatae, quo aut temporibus qui amet deserunt esse ducimus sed impedit, natus maxime voluptatem mollitia officiis ex ipsum!
+        </div>
+        <div class="box3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus delectus dolore culpa voluptate facere molestias eum animi sunt, reiciendis voluptates.
+        </div>
+    </div>
+</body>
+</html>

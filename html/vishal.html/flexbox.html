@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        /* we use float in which it will float to right if given right and leavespace in left so that other container can also come there.but to make things more simplify we use flexbox. */
+        .container{
+            background-color: aqua;
+            display: flex;
+            height: 100vw;
+            width: 100vw;
+            justify-content: center;/*[this help to align in center in vertical  direction ]*/
+            flex-direction:row; /*this help to give direction to its item in containers its applied on container*/
+            flex-wrap: wrap;/* when the system get smaller view in mobile then this box will not compress it will wrap one after another in downward direction*/
+            align-content: center;/* [this will bring every container in center of vw of container in horizontal direction] and if it is align content then it will wrap with no spacer between then but if it is align-item then it will wrap with space between them*/
+
+        /* THE ABOVE PROPERTY IS USED FOR CONTAINER NOW WE WILL USE PROPERTY USE FOR ITEM IN CONTAINER */
+             
+
+        }
+        .box1{
+            background-color: red;
+            height: 80px;
+            width: 80px;
+            order: 4;/*container will change its order*/
+            flex-grow: 1;/*this help to increase size of box if there is an extra space*/
+    
+        }
+        .box2{
+            background-color: blue;
+            height: 80px;
+            width: 80px;
+            align-self: flex-end; /*this help to remove and change align of item*/
+        }
+        .box3{
+            background-color: green;
+            height: 80px;
+            width: 80px;
+            flex-shrink: 2;/*this help to shrink box if there is an lack of space*/
+        }
+        .box4{
+            background-color: blueviolet;
+            height: 80px;
+            width: 80px;
+        }
+    </style>
+  
+</head>
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+</body>
+</html>

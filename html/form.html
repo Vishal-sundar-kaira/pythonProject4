@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>html form</title>
+</head>
+<body>
+    <div>
+        <h1>Travel form for trip</h1>
+        <form action="form.php">
+            <input type="text" placeholder="enter your name">
+            <label for="sectionida">
+            <input type="radio" value="section a" name="section" id="sectionida">section a
+            </label>
+            <label for="sectionidb">
+            <input type="radio" value="section b" name="section" id="sectionidb">section b
+            </label>
+            <label for="sectionidc">
+                <input type="radio" value="section c" name="section" id="sectionidc">section c
+                </label>
+<!-- Remember:name tag is used to identify they are same if you write same name then it will allow to choose only one radio
+value is used with name tag as it will assign at a unique value at which system can recognize it while doing css like to change color of value1
+ id and lable tag work simultaneously you have to make sure that id and for in label are same id is unique roll no and it will help to click
+on radio button without even clicking it just by clicking that text with radio button. lable is also used to give label before tag. -->
+              <input type="checkbox" value="book1" name="books">who will cry when you die?
+              <input type="checkbox" value="book2" name="books">forty rules of love <br>
+              <a href="/about.html"><input type="button" value="submit" ></a>  <!---in this way we can put link in button-->
+              <label for="birthdayid">Enter your birth date:
+                  <input type="date" name="birthday" value:"2002-07-07" id="birthdayid"><br>
+              </label>
+              <label for="explainn"> enter your reason</label>
+
+              <textarea name="explain" id="explainn" placeholder="Explain why you like to visit this page" cols="100"rows="20"></textarea>
+              <!-- MAKE GOOD USE OF LABEL NAME VALUE AND ID PRACTICE IT -->
+
+              <select name="car" id="car">
+                  <option value="rollroyce">rollroyce</option>
+                  <option value="merchedis">merchedis</option>
+                  <option value="ferari">ferari</option>
+              </select>
+
+              <!-- we can also embebed videos here in youtube they provide direct link to embebed -->
+              <video src="IMG_5793.MOV" controls width="100"></video> <!---you can use loop and autoplay-->        </form>
+    </div>
+</body>
+</html>

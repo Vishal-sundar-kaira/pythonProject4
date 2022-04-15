@@ -1,0 +1,17 @@
+@media screen and (max-width:1000px){
+    .container{
+        width: 1000px;
+    }
+    header{
+        width: 1000px;
+        height: 138px;
+        padding: 10px;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        width: 1000px;
+    }
+}
