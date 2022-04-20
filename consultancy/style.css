@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+:root{
+    --main-bg-color:#18ef18;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    padding: 0px 90px;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif, cursive;
+    height: 70px;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    font-size: 45px;
+    color: #e70bcc;
+}
+ nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding: 0px 25px;
+}
+nav ul li a{
+    color: rgb(53, 53, 255);
+    font-size: 20px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: black;
+    font-weight: bold;
+}
+.search{
+    font-family: 'Courier New', Courier, monospace;
+}
+.search input{
+    width: 220px;
+    height: 25px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
+.container img{
+    width: 80vw;
+    padding:10px 128px;
+}
+.course{
+    font-family: Georgia, 'Times New Roman', Times, serif, cursive;
+    font-size: 40px;
+    margin: 15px 0px 0px 0px;
+}
+.topic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 55px 0px;
+    flex-wrap: wrap;
+}
+.topic1{
+    width: 300px;
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: whitesmoke 5px ;
+    border-style: groove;
+    border-radius: 5px;
+}
+.topic1 b{
+    font-size: 20px;
+}
+.demo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+}
+.vid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px 0px;
+    
+}
+.video{
+    margin: 10px;
+    border: whitesmoke 5px groove;
+}
+.foot{
+    background-color:rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.follow{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.foot1{
+    margin: 25px 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.copy{
+    background-color: black;
+    color:white;
+    font-size: 18px;
+}
